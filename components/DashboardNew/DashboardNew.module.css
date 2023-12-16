@@ -1,0 +1,14 @@
+.title {
+    font-weight: 900;
+
+}
+
+
+.currencyContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.currencyInput {
+    flex: 1;
+}

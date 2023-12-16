@@ -1,0 +1,24 @@
+.title {
+  line-height: 1;
+}
+
+/* on hover on card class ease in out */
+
+.card {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.noEvents {
+  margin-top: 100px;
+  justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+}
