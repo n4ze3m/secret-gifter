@@ -102,7 +102,6 @@ export function DashboardNew({
             label="Event Date"
             placeholder="Select event date"
             name="event_date"
-            value={new Date()}
             required
             mb="md"
           />
