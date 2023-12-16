@@ -1,3 +1,4 @@
+import { Hero } from "@/components/Landing/Hero";
 import { Layout } from "@/components/Layout";
 import { createClient } from "@/utils/supabase/server";
 import { cookies } from "next/headers";
@@ -12,9 +13,11 @@ export default async function Index() {
 
   if (session) {
     return redirect("/dashboard");
-  } else {
-    return redirect("/auth");
   }
 
-  return <Layout>under construction</Layout>;
+  return (
+    <Layout>
+      <Hero />
+    </Layout>
+  );
 }

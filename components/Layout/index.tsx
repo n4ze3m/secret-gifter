@@ -1,6 +1,7 @@
 "use client";
 import { AppShell, Group, Text } from "@mantine/core";
 import classes from "./Layout.module.css";
+import Link from "next/link";
 type Props = {
   children: React.ReactNode;
 };
@@ -11,7 +12,9 @@ export const Layout = ({ children }: Props) => {
       <AppShell.Header>
         <div className={classes.header}>
           <Group justify="space-between">
-            <Text size="xl" fw="bold">
+            <Text  
+            component={Link} href="/"
+            size="xl" fw="bold">
               {"Secret Gifter 🎁"}
             </Text>
 
