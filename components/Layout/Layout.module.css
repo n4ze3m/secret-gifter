@@ -21,6 +21,9 @@
       var(--mantine-color-dark-8)
     );
   }
+  @media (max-width: $mantine-breakpoint-xs) {
+    display: none;
+  }
 }
 
 .userActive {
