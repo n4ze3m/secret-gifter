@@ -77,7 +77,7 @@ export function DashboardNew({
             name="description"
             label="Event Description"
             mb="md"
-            placeholder="A description of the event will be helpful for your participants"
+            placeholder="A description of the event"
           />
 
           <Group grow preventGrowOverflow={false} wrap="nowrap" mb="md">

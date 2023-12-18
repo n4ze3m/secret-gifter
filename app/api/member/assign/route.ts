@@ -37,7 +37,8 @@ export async function POST(request: NextRequest) {
       const html = htmlTemplate(
         assignment.receiver.name,
         `${events.budget} ${events.currency}`,
-        dayjs(events.date).format("MMMM D, YYYY")
+        dayjs(events.date).format("MMMM D, YYYY"),
+        events.name
       );
       await resend.emails.send({
         from: "Secret Gifter 🎁 <gifter@hello.wayto.website>",
