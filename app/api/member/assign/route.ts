@@ -43,7 +43,7 @@ export async function POST(request: NextRequest) {
       await resend.emails.send({
         from: "Secret Gifter 🎁 <gifter@hello.wayto.website>",
         to: [assignment.giver.email],
-        subject: "You are Secret Santa!",
+        subject: "It's time for some Secret Gifting!",
         html,
       });
     }
